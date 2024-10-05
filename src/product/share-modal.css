@@ -1,0 +1,45 @@
+.share-modal .modal-dialog {
+    max-width: 600px;
+}
+
+.share-modal .modal-content {
+    padding: 20px;
+}
+
+.share-modal .modal-header {
+    border-bottom: none;
+}
+
+.share-modal .modal-title {
+    font-size: 1.5rem;
+}
+
+.share-modal .btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    
+}
+
+.share-modal .share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.share-modal .share-button {
+    display: inline-flex;
+    justify-content: start;
+    align-items: start;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow effect */
+
+}
+
+.share-modal .share-button:hover {
+    transform: scale(1.1);
+}

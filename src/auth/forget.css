@@ -1,0 +1,193 @@
+/*-------forgetpassword-modal-------*/
+.forgetpassword-modal {
+  background-color: #ffffff;
+  margin: 30px auto 30px auto;
+  max-width: 424px;
+  width: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 418px) {
+  .forgetpassword-modal {
+    max-width: 95%;
+    width: 95%;
+  }
+}
+.forgetpassword-modal .modal-header {
+  justify-content: flex-end;
+}
+.forgetpassword-modal .login-close {
+  cursor: pointer;
+  padding: 8px 10px 10px 10px;
+  color: #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 11px;
+  float: right;
+  background-color: #F7F7F7;
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  color: #000;
+  opacity: 0.8;
+}
+.forgetpassword-modal .modal-header {
+  border-bottom: none !important;
+}
+.forgetpassword-modal .modal-body {
+  padding: 20px 65px 25px 65px;
+}
+@media (max-width: 650px) {
+  .forgetpassword-modal .modal-body {
+    padding: 20px 18px 25px 18px;
+  }
+}
+.forgetpassword-modal .modal-body .password-here p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  margin-top: 20px;
+}
+@media (max-width: 650px) {
+  .forgetpassword-modal .modal-body .password-here p {
+    margin: auto;
+    text-align: center;
+  }
+}
+.forgetpassword-modal .modal-body h5 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600;
+  font-family: "Rubik";
+  color: #2E384D;
+  margin-bottom: 20px;
+}
+@media (max-width: 650px) {
+  .forgetpassword-modal .modal-body h5 {
+    text-align: center;
+  }
+}
+.forgetpassword-modal .modal-body span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  margin-top: 20px;
+}
+.forgetpassword-modal .modal-body .social-media {
+  display: flex;
+  margin: 15px 0 20px 0;
+}
+@media (max-width: 650px) {
+  .forgetpassword-modal .modal-body .social-media {
+    justify-content: center;
+    margin: 15px 0px 20px 15px;
+  }
+}
+.forgetpassword-modal .modal-body .social-media .box {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  padding: 12px 14px 12px 14px;
+  background: #F7F7F7;
+  margin-right: 30px;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .forgetpassword-modal .modal-body .social-media .box {
+    margin-right: 20px;
+  }
+}
+.forgetpassword-modal .modal-body label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  font-family: "Rubik";
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.forgetpassword-modal .modal-body .form-control {
+  border: 1px solid #DDDDDD;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.forgetpassword-modal .modal-body .form-control:focus {
+  box-shadow: none !important;
+}
+.forgetpassword-modal .modal-body .form-group {
+  margin-top: 20px;
+  position: relative;
+}
+.forgetpassword-modal .modal-body .form-group .toggle {
+  position: absolute;
+  top: 29%;
+  right: 3%;
+}
+.forgetpassword-modal .modal-body .form-group .toggle img {
+  margin-right: 7px;
+}
+.forgetpassword-modal .modal-body .forget-password a {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  padding-top: 5px;
+}
+.forgetpassword-modal .modal-body .reset-btn {
+  margin: 30px 0 15px 0;
+}
+.forgetpassword-modal .modal-body .reset-btn button {
+  background: #011553;
+  width: 100%;
+  border: 1px solid #011553;
+  border-radius: 15px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.forgetpassword-modal .modal-body .reset-btn button:hover {
+  color: #011553;
+  background: none;
+}
+.forgetpassword-modal .modal-body .reset-btn button:focus {
+  box-shadow: none;
+}
+.forgetpassword-modal .modal-body .login-btn .btn-close {
+  color: black;
+  background-color: #F7F7F7 !important;
+  border: 1px solid #F7F7F7 !important;
+  border-radius: 50% !important;
+  height: 38px !important;
+  width: 38px !important;
+}
+.forgetpassword-modal .modal-body .login-btn .btn-close:focus {
+  box-shadow: none;
+}
+.forgetpassword-modal .modal-body .register-here {
+  margin: auto;
+  text-align: center;
+}
+.forgetpassword-modal .modal-body .register-here p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  font-weight: 400;
+}
+.forgetpassword-modal .modal-body .register-here a {
+  color: #011553;
+  font-size: 12px;
+}
+.forgetpassword-modal .modal-body .register-here a:hover {
+  text-decoration: underline;
+}
+
+.validMsg {
+  position: absolute !important;
+  bottom: -20px !important;
+  left: 12px !important;
+  font-size: 11px !important;
+  color: red !important;
+}/*# sourceMappingURL=forget.css.map */

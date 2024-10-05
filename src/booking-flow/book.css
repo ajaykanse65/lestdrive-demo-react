@@ -1,0 +1,912 @@
+
+/*-----Modal Booknow Calender-----*/
+.calendar {
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .calendar {
+    padding: 10px;
+  }
+}
+.calendar .month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.calendar .month .year {
+  font-weight: 600;
+  margin-left: 10px;
+}
+.calendar .month .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #0a3d62;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  transition-duration: 0.2s;
+  position: relative;
+}
+.calendar .month .nav:hover {
+  background: #eee;
+}
+.calendar .days {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 15px;
+  background-color: #F7F7F7;
+  padding: 15px 0px 15px 0px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.calendar .days span {
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+.calendar .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.calendar .dates button {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  justify-self: center;
+  color: #000;
+  align-self: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  margin: 2px 2px 15px 2px;
+  transition-duration: 0.2s;
+}
+.calendar .dates button.today {
+  background-color: #d14040;
+  color: #ffffff;
+}
+.calendar .dates button:first-child {
+  grid-column: 1;
+}
+.calendar .dates button:hover {
+  background: #011553;
+  color: #fff;
+}
+.calendar .dates button:focus {
+  background: #011553;
+  color: #fff;
+}
+.calendar .selectDate {
+  display: flex;
+}
+.calendar .selectDate .selectMonth {
+  margin-right: 10px;
+}
+.calendar .selectDate select.form-select {
+  color: black;
+  font-size: 14px;
+}
+.calendar .selectDate select.form-select:focus-visible {
+  outline: none;
+}
+.calendar .selectDate select.form-select:focus {
+  border-color: #ced4da !important;
+  outline: none;
+  box-shadow: none;
+}
+
+/*-----End Modal Booknow Calender-----*/
+
+
+/*-----Profile Section-----*/
+.profile-section {
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 40px;
+} /* New CSS */
+
+.profile-section h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 20px;
+} /* New CSS */
+
+.profile-section .form-group {
+  margin-bottom: 20px;
+} /* New CSS */
+
+.profile-section .form-group label {
+  display: block;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 8px;
+  font-weight: 500;
+} /* New CSS */
+
+.profile-section .form-group input,
+.profile-section .form-group textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  box-shadow: none;
+} /* New CSS */
+
+/*-----Profile Section-----*/
+.profile-section .posRelative {
+  position: relative;
+} /* New CSS */
+
+.profile-section .d-flex {
+  display: flex;
+  align-items: center;
+} /* New CSS */
+
+.profile-section .country-code-select {
+  width: 80px;
+  padding: 12px;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px 0 0 15px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+} /* New CSS */
+
+.profile-section .form-control {
+  border-radius: 0 15px 15px 0;
+  border-left: 0;
+  font-size: 14px;
+  padding: 12px 20px;
+  width: 100%;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #DDDDDD;
+  box-shadow: none;
+} /* New CSS */
+
+.profile-section .form-control:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border-color: #011553;
+} /* New CSS */
+
+.profile-section .validationMsg {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+} /* New CSS */
+
+/*-----End Profile Section-----*/
+
+
+.profile-section .form-group input:focus-visible,
+.profile-section .form-group textarea:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border-color: #011553;
+} /* New CSS */
+
+.profile-section .form-group textarea {
+  resize: none;
+  height: 100px;
+} /* New CSS */
+
+.profile-section .form-group input[type=email] {
+  text-transform: lowercase;
+} /* New CSS */
+
+.profile-section .nex-prev {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+} /* New CSS */
+
+@media (max-width: 576px) {
+  .profile-section .nex-prev {
+    justify-content: center;
+  }
+} /* New CSS */
+
+.profile-section .nex-prev .cancel {
+  padding: 14px 0px;
+  text-align: center;
+  width: 171px;
+  margin-right: 6px;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  color: #000000;
+  font-weight: 400;
+  transition: ease-in-out 0.2s;
+  font-family: "Rubik", sans-serif;
+} /* New CSS */
+
+@media (max-width: 991px) {
+  .profile-section .nex-prev .cancel {
+    font-size: 12px;
+  }
+} /* New CSS */
+
+.profile-section .nex-prev .cancel:hover {
+  background: #011553;
+  color: #ffffff;
+} /* New CSS */
+
+@media (max-width: 576px) {
+  .profile-section .nex-prev .cancel {
+    width: 148px;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+} /* New CSS */
+
+.profile-section .nex-prev .next {
+  padding: 14px 0px;
+  text-align: center;
+  background: #011553;
+  width: 171px;
+  margin-right: 12px;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #011553;
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  transition: ease-in-out 0.2s;
+  font-family: "Rubik", sans-serif;
+} /* New CSS */
+
+@media (max-width: 991px) {
+  .profile-section .nex-prev .next {
+    font-size: 12px;
+  }
+} /* New CSS */
+
+@media (max-width: 576px) {
+  .profile-section .nex-prev .next {
+    width: 148px;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+} /* New CSS */
+/*-----End Profile Section-----*/
+
+
+
+/*----- Modal Booknow Summary-----*/
+.modal-content {
+  border-radius: 20px !important;
+}
+
+.booking-sec {
+  margin-bottom: 40px;
+}
+.booking-sec div#bookingModal {
+  z-index: 10000;
+}
+.booking-sec .modal-header {
+  border: 0;
+}
+.booking-sec .choose-h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.booking-sec .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 576px) {
+  .booking-sec .leftSec {
+    background: #ffffff;
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .booking-sec .rightSec {
+    background: #ffffff;
+    padding: 10px;
+  }
+}
+.booking-sec .rightSec h4 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #555555;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.booking-sec .box-combonents {
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  justify-content: space-around;
+  background: #ffffff;
+  display: flex;
+}
+@media (max-width: 576px) {
+  .booking-sec .box-combonents {
+    margin: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .booking-sec .box-combonents {
+    margin: 10px 30px 10px 30px;
+  }
+}
+.booking-sec .box-combonents .car-name {
+  padding: 30px 0px 30px 0px;
+}
+.booking-sec .box-combonents .car-name h3 {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  max-width: 165px;
+  width: 100%;
+}
+.booking-sec .box-combonents .car-name h3:after {
+  content: none !important;
+}
+.booking-sec .box-combonents .car-name h5 {
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #898989;
+}
+.booking-sec .box-combonents .car-image {
+  margin: 5px;
+}
+.booking-sec .box-combonents .car-image img {
+  width: 151px;
+}
+.booking-sec .start-end-dates {
+  display: flex;
+  margin: 30px 0 30px 0;
+}
+@media (max-width: 576px) {
+  .booking-sec .start-end-dates {
+    margin: 30px 30px 30px 30px;
+  }
+}
+.booking-sec .start-end-dates p {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.booking-sec .start-end-dates input {
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  height: 51px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0 0 0 20px;
+  width: 171px;
+  margin-right: 6px;
+  margin-left: 6px;
+  line-height: 18px;
+}
+@media (max-width: 576px) {
+  .booking-sec .start-end-dates input {
+    height: 42px;
+    width: 148px;
+  }
+}
+.booking-sec .start-end-dates input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/*-----End Modal Booknow Summary-----*/
+/*----Upload document--*/
+.upload-document {
+  padding: 0px 10px 0 20px;
+}
+.upload-document h5 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.upload-document .box {
+  display: flex;
+  margin-bottom: 15px;
+}
+.upload-document .box p {
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #000000;
+  width: 100%;
+  max-width: 170px;
+}
+@media (max-width: 991px) {
+  .upload-document .box p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .upload-document .box p {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+.upload-document .drivers {
+  border-bottom: 1px solid #dedbdb;
+  margin-bottom: 15px;
+}
+.upload-document .drivers span {
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .upload-document .drivers span {
+    margin: auto;
+    max-width: 55px;
+    overflow: hidden;
+    /* margin-left: auto; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+  }
+}
+.upload-document .emirates {
+  border-bottom: 1px solid #dedbdb;
+  margin-bottom: 15px;
+}
+.upload-document .emirates span {
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .upload-document .emirates span {
+    margin: auto;
+    max-width: 55px;
+    overflow: hidden;
+    /* margin-left: auto; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+  }
+}
+.upload-document .other-doc {
+  border-bottom: 1px solid #dedbdb;
+  margin-bottom: 15px;
+}
+.upload-document .other-doc span {
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .upload-document .other-doc span {
+    margin: auto;
+    max-width: 55px;
+    overflow: hidden;
+    /* margin-left: auto; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+  }
+}
+.upload-document input[type=file]::file-selector-button {
+  opacity: 0 !important;
+  visibility: hidden;
+  display: none;
+}
+.upload-document .form-control[type=file]::after {
+  content: "Upload";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: var(--white);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  right: 0;
+  border: 1px solid var(--black);
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-document .changeDoc[type=file]::after {
+  content: "Change";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: var(--white);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  right: 0;
+  border: 1px solid var(--black);
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-document .form-control[type=file] {
+  width: 25%;
+  border-radius: 10px;
+  margin-left: auto;
+  position: relative;
+  font-size: 14px;
+  border: 0;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23707070FF' stroke-width='1' stroke-dasharray='4' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  padding: 14px 0px;
+  color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 767px) {
+  .upload-document .form-control[type=file] {
+    width: 26%;
+    font-size: 14px;
+    padding: 18px 0px 9px 0;
+  }
+}
+.upload-document .form-control[type=file]:focus-visible {
+  outline: none;
+}
+.upload-document .form-control[type=file]:focus {
+  outline: none;
+  box-shadow: none;
+}
+.upload-document .selectType {
+  margin: 23px 0 35px 0;
+}
+@media (max-width: 576px) {
+  .upload-document .selectType h5 {
+    font-size: 17px !important;
+    line-height: 30px !important;
+  }
+}
+.upload-document .selectHere label {
+  margin-right: 85px;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .upload-document .selectHere label {
+    margin-right: 29px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+.upload-document .selectHere input[type=radio] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 0.8px solid #9A9A9A;
+  background-color: #ffffff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.upload-document .selectHere input[type=radio]:checked {
+  background-color: #051550;
+  border-color: #051550;
+}
+.upload-document .boxDocuments {
+  height: 280px;
+  overflow: auto;
+  padding-right: 5px;
+}
+.upload-document ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/*----End Upload document--*/
+.nex-prev {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: flex-end;
+}
+@media (max-width: 576px) {
+  .nex-prev {
+    justify-content: center !important;
+  }
+}
+.nex-prev .cancel {
+  padding: 14px 0px;
+  text-align: center;
+  width: 171px;
+  margin-right: 6px;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  color: #000000;
+  font-weight: 400;
+  border: 400;
+  transition: ease-in-out 0.2s;
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 991px) {
+  .nex-prev .cancel {
+    font-size: 12px;
+  }
+}
+.nex-prev .cancel:hover {
+  background: #011553 0% 0% no-repeat padding-box;
+  color: #ffffff;
+}
+@media (max-width: 576px) {
+  .nex-prev .cancel {
+    width: 148px;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+}
+.nex-prev .next {
+  padding: 14px 0px;
+  text-align: center;
+  background: #011553;
+  width: 171px;
+  margin-right: 12px;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #011553;
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  border: 400;
+  transition: ease-in-out 0.2s;
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 991px) {
+  .nex-prev .next {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .nex-prev .next {
+    width: 148px;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-content {
+  border: none;
+}
+
+/*------booking-confirmation----*/
+.booking-confirmation {
+  padding: 0px 10px 0 20px;
+}
+.booking-confirmation h5 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.booking-confirmation .note {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 23px;
+}
+.booking-confirmation p {
+  color: #555555;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 6px;
+  font-weight: 300;
+}
+.booking-confirmation .contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+}
+.booking-confirmation .contents .leftSec {
+  justify-content: normal;
+  background: #ffffff;
+  display: flex;
+  padding: 20px 0 20px 15px;
+  border-radius: 15px;
+  width: 67%;
+}
+@media (max-width: 991px) {
+  .booking-confirmation .contents .leftSec {
+    padding: 15px 0 15px 10px;
+    width: 100%;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 991px) {
+  .booking-confirmation .contents .leftSec .car-image {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 991px) {
+  .booking-confirmation .contents .leftSec .car-image img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 183px;
+    height: 130px;
+  }
+}
+.booking-confirmation .contents .leftSec .car-name {
+  padding: 30px 0px 0px 0px;
+}
+@media (max-width: 991px) {
+  .booking-confirmation .contents .leftSec .car-name {
+    padding: 30px 0px 15px 15px;
+  }
+}
+.booking-confirmation .contents .leftSec .car-name h3 {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  max-width: 165px;
+  width: 100%;
+}
+.booking-confirmation .contents .leftSec .car-name h3:after {
+  content: none !important;
+}
+@media (max-width: 991px) {
+  .booking-confirmation .contents .leftSec .car-name h3 {
+    max-width: 100%;
+  }
+}
+.booking-confirmation .contents .leftSec .car-name h5 {
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #898989;
+}
+.booking-confirmation .contents .righrSec {
+  justify-content: space-around;
+  width: 33%;
+  background: #F8F8F8;
+  border-radius: 15px;
+}
+@media (max-width: 991px) {
+  .booking-confirmation .contents .righrSec {
+    width: 100%;
+    margin: 0px 10px 10px 10px;
+    border-radius: 15px;
+  }
+}
+.booking-confirmation .start-end-dates-sec {
+  display: flex;
+  margin: 20px 0 0px 0;
+  justify-content: space-between;
+}
+.booking-confirmation .start-end-dates-sec p {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #555555;
+  margin-bottom: 10px;
+}
+.booking-confirmation .start-end-dates-sec h2 {
+  font-size: 1px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #011553;
+}
+.booking-confirmation .start-end-dates-sec .end-date {
+  margin-left: 10px;
+}
+.booking-confirmation .start-end-dates-sec input {
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  height: 51px;
+  width: 178px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0 0 0 20px;
+  margin-right: 10px;
+}
+.booking-confirmation .start-end-dates-sec input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/*------ End booking-confirmation----*/
+/*--------Thank you----------*/
+.thank-you .box-details {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.thank-you img {
+  height: 250px;
+}
+.thank-you p {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 500;
+  max-width: 470px;
+  margin: 40px auto 50px auto;
+  text-align: center;
+  
+
+}
+.thank-you .thank-you-btn a {
+  padding: 17px 40px;
+  text-align: center;
+  background: #011553;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #011553;
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  border: 400;
+  transition: ease-in-out 0.2s;
+
+}
+
+/*--------End Thank you----------*/
+.dateHover {
+  background: #b1c4ff !important;
+  color: #fff !important;
+}
+
+.startAndEndDate {
+  background: #011553 !important;
+  color: #fff !important;
+}
+
+.disabled {
+  opacity: 0.4 !important;
+}

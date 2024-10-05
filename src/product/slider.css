@@ -1,0 +1,54 @@
+/* Styles for the React slider */
+.horizontal-slider .example-track {
+    height: 7px !important;
+    border-radius: 4px;
+    margin-top: 20px; /* Add margin for spacing */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  .horizontal-slider .example-track-0 {
+    background: #f1f4f8;
+    margin-top: 20px; /* Add margin for spacing */
+    margin-bottom: 10px; /* Add margin for spacing */
+
+  }
+  
+  .horizontal-slider .example-track-1 {
+    background: #011553 !important;
+    margin-top: 20px; /* Add margin for spacing */
+    margin-bottom: 10px; /* Add margin for spacing */
+
+  }
+  
+  .horizontal-slider .example-thumb {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #c7c7c7;
+    top: -8px !important;
+    background-color: #ffffff !important;
+    border-radius: 8px;
+    margin-top: 20px; /* Add margin for spacing */
+    margin-bottom: 10px; /* Add margin for spacing */
+
+  }
+  
+  @media (max-width: 768px) {
+    .horizontal-slider .example-thumb {
+      width: 26px !important;
+      height: 27px !important;
+      border-radius: 8px;
+      margin-top: 20px; /* Add margin for spacing */
+      margin-bottom: 10px; /* Add margin for spacing */
+
+    }
+  }
+  
+  .horizontal-slider .example-thumb:after {
+    content: none !important;
+  }
+  
+  .horizontal-slider .example-thumb:focus-visible {
+    outline: none;
+  }
+  
+  

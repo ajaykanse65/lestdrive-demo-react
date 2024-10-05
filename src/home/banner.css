@@ -1,0 +1,40 @@
+/* BannerSlider.css */
+.swiper-pagination-bullet {
+    padding: 4px 14px;
+    width: auto;
+    line-height: 22px;
+    font-size: 13px;
+    color: #ffffff;
+    opacity: 1;
+    background: transparent !important;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .swiper-pagination {
+    bottom: 17% !important;
+    text-align: right !important;
+    left: unset !important;
+    right: 5%;
+  }
+  
+  @media (max-width: 1199px) {
+    .swiper-pagination {
+      bottom: 14% !important;
+      right: 5%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .swiper-pagination {
+      bottom: 14% !important;
+      right: 0;
+    }
+  }
+  

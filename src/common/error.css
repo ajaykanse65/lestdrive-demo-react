@@ -1,0 +1,77 @@
+.server-error {
+    margin: auto;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .server-error h5 {
+    font-size: 100px;
+    font-weight: 600;
+    color: #000000;
+    margin: 20px 0 5px 0;
+  }
+  @media (max-width: 1400.98px) {
+    .server-error h5 {
+      font-size: 95px;
+    }
+  }
+  @media (max-width: 768.98px) {
+    .server-error h5 {
+      font-size: 51px;
+    }
+  }
+  .server-error h6 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+  }
+  @media (max-width: 1400.98px) {
+    .server-error h6 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 768.98px) {
+    .server-error h6 {
+      font-size: 15px;
+      margin: 0px 0 0px 0;
+    }
+  }
+  .server-error p {
+    font-weight: 400;
+    font-size: 25px;
+    color: #555555;
+    line-height: 35px;
+    max-width: 666px;
+    margin: auto auto 0px;
+  }
+  @media (max-width: 768.98px) {
+    .server-error p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  .server-error .serverButton {
+    margin-top: 60px;
+  }
+  @media (max-width: 1536px) {
+    .server-error .serverButton {
+      margin-top: 40px;
+    }
+  }
+  .server-error .serverButton a {
+    background: #011553 0% 0% no-repeat padding-box;
+    border: 1px solid #011553;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    font-size: 12px;
+  }
+  .server-error .serverButton a:hover {
+    background: white;
+    color: #011553;
+  }
+  @media (min-width: 991px) {
+    .server-error img {
+      width: 300px;
+    }
+  }

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*-----Breadcrumbs------*/
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/ ";
+}
+
+ul.breadcrumb a {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  ul.breadcrumb a {
+    font-size: 12px;
+  }
+}
+ul.breadcrumb a.active {
+  font-weight: 600;
+}
+
+ul.breadcrumb {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/*-----End Breadcrumbs------*/
+/*---------ad Promotions-------------*/
+.adPromotions {
+  margin: 50px 0;
+}
+@media (max-width: 650px) {
+  .adPromotions {
+    margin: 30px 0 30px 0;
+  }
+}
+.adPromotions .details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.adPromotions .details .contentSec {
+  max-width: 59%;
+  width: 100%;
+  margin-right: 30px;
+}
+@media (max-width: 991px) {
+  .adPromotions .details .contentSec {
+    max-width: 49%;
+  }
+}
+@media (max-width: 768px) {
+  .adPromotions .details .contentSec {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+.adPromotions .details .adContent {
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .adPromotions .details .adContent {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+}
+.adPromotions .details .formField {
+  margin-bottom: 20px;
+}
+.adPromotions .details .formSec {
+  max-width: 37%;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+  margin: -85px 0 0 -27px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 991px) {
+  .adPromotions .details .formSec {
+    max-width: 48%;
+  }
+}
+@media (max-width: 768px) {
+  .adPromotions .details .formSec {
+    max-width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+}
+.adPromotions .details .formSec h4 {
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+.adPromotions .details .formSec input[type=text],
+.adPromotions .details .formSec input[type=email],
+.adPromotions .details .formSec input[type=password] {
+  box-shadow: none;
+  background: #fff;
+  line-height: 20px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 12px 10px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  margin: 0;
+}
+.adPromotions .details .formSec textarea {
+  overflow: hidden;
+  box-shadow: none;
+  overflow-wrap: break-word;
+  height: 150px;
+  font-size: 13px;
+  resize: none;
+}
+.adPromotions .details .formSec p.error-msg {
+  color: red;
+  font-size: 12px;
+}
+.adPromotions .details .formSec .submutBtn {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .adPromotions .details .formSec .submutBtn {
+    margin: 30px 0 15px 0;
+  }
+}
+.adPromotions .details .formSec .submutBtn a {
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  background: #1A214F;
+  padding: 8px 30px;
+  border: 1px solid #1A214F;
+  transition: 0.3s ease-in-out;
+}
+.adPromotions .details .formSec .submutBtn a:hover {
+  background: none;
+  color: #1A214F;
+  transition: 0.3s ease-in-out;
+}
+.adPromotions h3 {
+  font-size: 25px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .adPromotions h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+.adPromotions ul {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+.adPromotions li {
+  font-size: 15px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.adPromotions .adHead h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+@media (max-width: 650px) {
+  .adPromotions .adHead h2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .adPromotions .adHead h2 {
+    font-size: 18px;
+  }
+}
+.adPromotions .adHead h2::after {
+  background-color: #DB4D3E;
+  bottom: -7px;
+  height: 4px;
+  width: 509px;
+  position: relative;
+  content: "";
+  display: block;
+}
+@media (max-width: 650px) {
+  .adPromotions .adHead h2::after {
+    width: 337px;
+  }
+}
+@media (max-width: 375px) {
+  .adPromotions .adHead h2::after {
+    width: 307px;
+  }
+}
+.adPromotions .adImage {
+  margin-bottom: 20px;
+}
+

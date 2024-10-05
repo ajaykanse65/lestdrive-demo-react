@@ -1,0 +1,158 @@
+.searchSec .selectCars {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+.searchSec .selectCars .car {
+  max-width: 33%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.searchSec .selectCars .car p {
+  font-size: 8px;
+  line-height: 10px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 6px;
+  cursor: pointer;
+}
+.searchSec .selectCars .car:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0px;
+  background: #ddd;
+  width: 1px;
+  text-align: center;
+  height: 100%;
+}
+.searchSec .selectCars .car:nth-of-type(3)::after {
+  content: none !important;
+}
+.searchSec .selectCars .car:last-child::after {
+  content: none !important;
+}
+.searchSec .searchCar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 646px;
+  width: 100%;
+  position: relative;
+  /* margin: auto; */
+  margin-left: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.searchSec .searchCar .search-group {
+  display: flex;
+  width: 100%;
+  padding-top: 26px;
+  position: relative;
+}
+.searchSec .searchCar .search-group:before {
+  font-family: "iconfont";
+  content: url(../assets/images/home/search-icon.png);
+  font-size: 0.84em;
+  position: absolute;
+  left: 3%;
+  top: 54%;
+  z-index: 1;
+  color: #898989;
+}
+.searchSec .searchCar .search-group .search-input {
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+  padding: 17px 110px 17px 30px;
+  width: 100%;
+  border: solid 2px #ECEFF4;
+  position: relative;
+  border-radius: 15px;
+  background: #ECEFF4;
+  box-sizing: border-box;
+}
+.searchSec .searchCar .button-search {
+  transition: background 0.25s, color 0.25s;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  right: 9px;
+  position: absolute;
+  color: white;
+  margin: 9px 0px 8px 8px;
+  padding: 10px 16px 10px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #1A214F;
+  background: #1A214F;
+}
+.searchSec .searchCar .button-search:hover {
+  transition: background 0.25s, color 0.25s;
+  background: none;
+  color: #1A214F;
+  border: 1px solid #1A214F;
+}
+.searchSec input.search-input:focus {
+  transition: background 0.25s, border-color 0.25s;
+  outline: none;
+}
+.searchSec input.search-input:focus::-moz-placeholder {
+  -moz-transition: color 0.25s;
+  transition: color 0.25s;
+  color: #898989;
+}
+.searchSec input.search-input:focus::placeholder {
+  transition: color 0.25s;
+  color: #898989;
+}
+.searchSec .searchDropdown {
+  position: absolute;
+  background: #fff;
+  z-index: 100;
+  top: 100%;
+  width: 92%;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 120px;
+  overflow: auto;
+  box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.13) p;
+  box-shadow-font-size: 14px;
+  box-shadow-line-height: 1.5;
+  box-shadow-color: #000000;
+}
+.searchSec .searchDropdown ::-webkit-scrollbar {
+  width: 2px;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+#searchModalLabel {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.modal-header {
+  border: none;
+  margin-top: 10px;
+}
+
+button.btn-close {
+  border-radius: 50%;
+  background-color: #F1F4F8;
+  padding: 13px;
+  font-size: 11px;
+  opacity: 0.65;
+}
+
+button.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+/*# sourceMappingURL=search.css.map */

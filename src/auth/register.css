@@ -1,0 +1,206 @@
+/*-------register-----*/
+.register-modal {
+  background-color: #ffffff;
+  margin: 30px auto 30px auto;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 418px) {
+  .register-modal {
+    max-width: 95%;
+    width: 95%;
+  }
+}
+.register-modal .modal-header {
+  justify-content: flex-end;
+}
+.register-modal .register-close {
+  cursor: pointer;
+  padding: 8px 10px 10px 10px;
+  color: #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 11px;
+  float: right;
+  background-color: #F7F7F7;
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  color: #000;
+  opacity: 0.8;
+}
+.register-modal .modal-body {
+  padding: 40px 65px 25px 65px;
+}
+@media (max-width: 650px) {
+  .register-modal .modal-body {
+    padding: 30px 18px 25px 18px;
+  }
+}
+.register-modal .modal-body .login-here p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  margin-top: 20px;
+}
+@media (max-width: 650px) {
+  .register-modal .modal-body .login-here p {
+    margin: auto;
+    text-align: center;
+  }
+}
+.register-modal .modal-body h5 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600;
+  font-family: "Rubik";
+  color: #2E384D;
+  margin-bottom: 20px;
+}
+@media (max-width: 650px) {
+  .register-modal .modal-body h5 {
+    text-align: center;
+  }
+}
+.register-modal .modal-body span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  margin-top: 20px;
+}
+.register-modal .modal-body .social-media {
+  display: flex;
+  margin: 15px 0 20px 0;
+}
+@media (max-width: 650px) {
+  .register-modal .modal-body .social-media {
+    justify-content: center;
+    margin: 15px 0px 20px 15px;
+  }
+}
+.register-modal .modal-body .social-media .box {
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  border: none;
+  padding: 12px 14px 12px 14px;
+  background: #F7F7F7;
+  margin-right: 30px;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .register-modal .modal-body .social-media .box {
+    margin-right: 20px;
+  }
+}
+.register-modal .modal-body label {
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  font-family: "Rubik";
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.register-modal .modal-body .form-control {
+  border: 1px solid #DDDDDD;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.register-modal .modal-body .form-control:focus {
+  box-shadow: none !important;
+}
+.register-modal .modal-body .form-control:focus-visible {
+  outline: none;
+}
+.register-modal .modal-body .form-group {
+  margin-top: 20px;
+  position: relative;
+}
+.register-modal .modal-body .form-group .toggle {
+  position: absolute;
+  top: 29%;
+  right: 3%;
+}
+.register-modal .modal-body .form-group .toggle a {
+  color: #898989;
+}
+.register-modal .modal-body .form-group .toggle img {
+  margin-right: 7px;
+}
+.register-modal .modal-body .password-strength p {
+  font-size: 10px;
+  line-height: 18px;
+  color: #8C98A9;
+  margin-top: 6px;
+}
+.register-modal .modal-body .password-strength p a span {
+  color: red;
+}
+.register-modal .modal-body .login-btn {
+  margin: 30px 0 15px 0;
+}
+.register-modal .modal-body .login-btn button {
+  background: #011553;
+  width: 100%;
+  border: 1px solid #011553;
+  border-radius: 15px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.register-modal .modal-body .login-btn button:hover {
+  color: #011553;
+  background: none;
+}
+.register-modal .modal-body .login-btn button:focus {
+  box-shadow: none;
+}
+.register-modal .modal-body .login-btn .btn-close {
+  color: black;
+  background-color: #F7F7F7 !important;
+  border: 1px solid #F7F7F7 !important;
+  border-radius: 50% !important;
+  height: 38px !important;
+  width: 38px !important;
+}
+.register-modal .modal-body .login-btn .btn-close:focus {
+  box-shadow: none;
+}
+.register-modal .modal-body .register-here {
+  margin: auto;
+  text-align: center;
+}
+.register-modal .modal-body .register-here p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C98A9;
+  font-weight: 400;
+}
+.register-modal .modal-body .register-here a {
+  color: #011553;
+  font-size: 12px;
+}
+.register-modal .modal-body .register-here a:hover {
+  text-decoration: underline;
+}
+.register-modal select {
+  word-wrap: normal;
+  border: 1px solid #DDDDDD;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #011553;
+  font-weight: 400;
+  width: 71px;
+  line-height: 14px;
+  margin-right: 6px;
+}
+.register-modal select:focus-visible {
+  outline: none;
+}/*# sourceMappingURL=register.css.map */
